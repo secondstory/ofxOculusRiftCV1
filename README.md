@@ -54,7 +54,7 @@ void ofApp::draw(){
 
 *Notes*
 
-* This is a work-in-progress. Please add any feature requests.
+* This is a work-in-progress. Please add any feature requests through the issues panel.
 
 * This addon only works on Windows. 
 
