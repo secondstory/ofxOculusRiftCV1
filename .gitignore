@@ -18,3 +18,14 @@ example/obj/*
 *.pdb
 *.ilk
 *.aps
+*.db
+
+#########################
+# operating system
+#########################
+
+# Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
