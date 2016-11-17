@@ -54,6 +54,8 @@ void ofApp::draw(){
 
 *Notes*
 
+* This is a work-in-progress. Please add any feature requests.
+
 * This addon only works on Windows. 
 
 * It does not currently support Oculus Touch Controllers. 
