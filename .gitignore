@@ -29,3 +29,9 @@ example/obj/*
 Thumbs.db
 # Folder config file
 Desktop.ini
+
+#########################
+# exceptions 
+#########################
+
+!*.lib
