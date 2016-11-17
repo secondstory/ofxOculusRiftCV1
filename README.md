@@ -1,20 +1,20 @@
 
-*ofxDSHapVideoPlayer*
+*ofxOculusRiftCV1*
 
-ofxDSHapVideoPlayer is a video player addon for openFrameworks. It plays Hap-encoded videos natively on Windows using Direct Show video playback tools.
+ofxOculusRiftCV1 is an addon for using the OculusRift consumer version headset (CV1) in openFrameworks.  
 
-Hap is a video codec that is decoded on the GPU. Some of its benefits include fast decompression and low CPU usage. It was written by Tom Butterworth for VidVox/VDMX. For further information on Hap, see http://vdmx.vidvox.net/blog/hap.
+It uses some source code from James George's ofxOculusDKII addon.
 
 *Requirements*
 
-Before encoding videos using Hap codec, install the Hap codec for Direct Show. An installer is available from http://www.renderheads.com/downloads/2015/HapDirectShowCodecSetup.exe
+Install the latest Oculus Rift PC runtime.
 
 *Usage*
 
 In ofApp.h
 
 ```
-ofxDSHapVideoPlayer videoPlayer;
+ofxOculusRiftCV1 cv1;
 ```
 
 In ofApp.cpp
@@ -22,28 +22,38 @@ In ofApp.cpp
 ```c++
 void ofApp::setup(){
 
-	videoPlayer.load("HapVideo.avi");
-	videoPlayer.play();
+	cv1.init();
 }
 
 void ofApp::update(){
 
-	videoPlayer.update();
+	cv1.update();
 }
 
 void ofApp::draw(){
 
-	ofSetColor(255);
-	videoPlayer.draw(0, 0);
+	ofEnableDepthTest();
+
+	// draw left eye first
+	cv1.begin(ovrEye_Left);
+	ofClear(0, 255, 255);
+	drawScene();
+	cv1.end(ovrEye_Left);
+
+	// then right eye
+	// fyi--the order is critical!
+	cv1.begin(ovrEye_Right);
+	ofClear(0, 255, 255);
+	drawScene();
+	cv1.end(ovrEye_Right);
+
+	// display the stereo view in the OF window (optional)
+	cv1.draw(0, 0);
 }
 ```
 
 *Notes*
 
-* ofxDSHapVideoPlayer plays back Hap videos in .avi containers. It will not play back Hap-encoded video files in QuickTime movie containers. Encode Windows .avi files using Adobe Media Encoder, After Effects or other.
+* This addon only works on Windows. 
 
-* Sample Hap video files are available on http://renderheads.com/product/hap-for-directshow/
-
-* ofxDSHapVideoPlayer now supports snappy compression, but the performance is not as snappy.
-
-* This addon works with openFrameworks 0.9.0. For 0.8.4, use release 1.0.0 (https://github.com/secondstory/ofxDSHapVideoPlayer/releases/tag/v1.0.0)
+* It does not currently support Oculus Touch Controllers. 
