@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\src\ofxOculusRiftCV1.cpp">
+      <Filter>addons\ofxOculusRiftCV1\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_CAPI_Util.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_StereoProjection.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Alg.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Allocator.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Atomic.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Callbacks.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CRC32.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_DebugHelp.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Error.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_File.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_FileFILE.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_JSON.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Log.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_mach_exc_OSX.c">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Rand.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_RefCount.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SharedMemory.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Std.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String_FormatUtil.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String_PathUtil.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SysFile.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_System.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ThreadsPthread.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ThreadsWinAPI.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Timer.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_UTF8Util.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal\Logging_Tools.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\src\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\Logging_Library.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\Logging_OutputPlugins.cpp">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1">
+      <UniqueIdentifier>{7075D55E-C156-C6FB-F0C9-5576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\src">
+      <UniqueIdentifier>{ED217765-3DAA-A0F9-9D05-A682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs">
+      <UniqueIdentifier>{2DC525DF-115B-3B92-6B17-D063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR">
+      <UniqueIdentifier>{36D01651-8952-8521-7C36-D6B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\include">
+      <UniqueIdentifier>{76A69346-B59A-138B-0F3C-B7C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras">
+      <UniqueIdentifier>{C5B68C69-F138-2B0F-64DC-7F0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\src">
+      <UniqueIdentifier>{707EF48D-FDCC-05B1-A646-484A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\src\Common">
+      <UniqueIdentifier>{D4FFEE52-F068-CD4C-1D65-193A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources">
+      <UniqueIdentifier>{A9E045D6-2018-8B78-E281-2D5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows">
+      <UniqueIdentifier>{A72ED69B-78C9-49B1-9ED5-7623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVRKernel">
+      <UniqueIdentifier>{6FC8C6DF-5D7D-003B-C3FB-2A20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVRKernel\src">
+      <UniqueIdentifier>{DFD88FFA-A46E-8ECB-B122-630D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL">
+      <UniqueIdentifier>{4EE06AE4-4356-61E4-EEF5-D281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel">
+      <UniqueIdentifier>{CA2B0CA8-8C30-871B-854F-AA30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\Logging">
+      <UniqueIdentifier>{CC3CB808-5A3E-0563-12A2-5F27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\Logging\include">
+      <UniqueIdentifier>{20544EE3-5EF1-9306-B738-8140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\Logging\src">
+      <UniqueIdentifier>{9CF7FC14-E524-E0B3-C592-8D0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOculusRiftCV1\libs\Logging\src\internal">
+      <UniqueIdentifier>{B0A02129-D8EA-C6C7-5427-417E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\src\ofxOculusRiftCV1.h">
+      <Filter>addons\ofxOculusRiftCV1\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_CAPI_Util.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_Math.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_StereoProjection.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_Audio.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_D3D.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_GL.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_Keys.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_ErrorCode.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_Version.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common\Win32_GLAppUtil.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_CAPI_Prototypes.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows\resource.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE_GL.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Alg.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Allocator.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Array.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Atomic.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Callbacks.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CallbacksInternal.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Color.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Compiler.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ContainerAllocator.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CRC32.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_DebugHelp.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Delegates.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Deque.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Error.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_File.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Hash.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_JSON.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_KeyCodes.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_List.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Lockless.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Log.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_mach_exc_OSX.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Nullptr.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Rand.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_RefCount.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SharedMemory.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Std.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_StringHash.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SysFile.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_System.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Threads.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Timer.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Types.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_UTF8Util.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Win32_IncludeWindows.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\WindowsAFunctions.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_Library.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_OutputPlugins.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_Tools.h">
+      <Filter>addons\ofxOculusRiftCV1\libs\Logging\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ofxOculusRiftCV1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOculusRiftCV1\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel;..\..\..\addons\ofxOculusRiftCV1\libs\Logging;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);LibOVR.lib;libOVRKernel.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Debug\VS2015;$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Debug\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOculusRiftCV1\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel;..\..\..\addons\ofxOculusRiftCV1\libs\Logging;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);LibOVR.lib;libOVRKernel.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2015;$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\x64\Debug\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Debug (DLL CRT);..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Debug (DLL CRT)\VS2015;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Release (DLL CRT);..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Release (DLL CRT)\VS2015;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Tracing;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Util;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Util\Shaders;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2010;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2012;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2013;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2010;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2012;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2013;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows;..\..\..\addons\ofxOculusRiftCV1\libs\Logging;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal;..\..\..\addons\ofxOculusRiftCV1\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);LibOVR.lib;libOVRKernel.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2015;$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Release\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Debug (DLL CRT);..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Debug (DLL CRT)\VS2015;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Release (DLL CRT);..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\Win32\Release (DLL CRT)\VS2015;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Tracing;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Util;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Util\Shaders;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2010;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2012;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\Win32\Release\VS2013;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2010;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2012;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2013;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources;..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows;..\..\..\addons\ofxOculusRiftCV1\libs\Logging;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src;..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal;..\..\..\addons\ofxOculusRiftCV1\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies);LibOVR.lib;libOVRKernel.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVR\libs\Windows\x64\Release\VS2015;$(OF_ROOT)\addons\ofxOculusRiftCV1\libs\LibOVRKernel\libs\Windows\x64\Release\VS2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\src\ofxOculusRiftCV1.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_CAPI_Util.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_StereoProjection.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Alg.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Allocator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Atomic.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Callbacks.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CRC32.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_DebugHelp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Error.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_File.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_FileFILE.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_JSON.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Log.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_mach_exc_OSX.c" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Rand.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_RefCount.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SharedMemory.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Std.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String_FormatUtil.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String_PathUtil.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SysFile.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_System.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ThreadsPthread.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ThreadsWinAPI.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Timer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_UTF8Util.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\internal\Logging_Tools.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\Logging_Library.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\src\Logging_OutputPlugins.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\src\ofxOculusRiftCV1.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_CAPI_Util.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_Math.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\Extras\OVR_StereoProjection.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_Audio.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_D3D.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_GL.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_CAPI_Keys.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_ErrorCode.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\include\OVR_Version.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Common\Win32_GLAppUtil.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\OVR_CAPI_Prototypes.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVR\src\Resources\Windows\resource.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\GL\CAPI_GLE_GL.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Alg.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Allocator.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Array.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Atomic.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Callbacks.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CallbacksInternal.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Color.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Compiler.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_ContainerAllocator.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_CRC32.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_DebugHelp.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Delegates.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Deque.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Error.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_File.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Hash.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_JSON.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_KeyCodes.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_List.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Lockless.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Log.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_mach_exc_OSX.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Nullptr.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Rand.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_RefCount.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SharedMemory.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Std.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_String.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_StringHash.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_SysFile.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_System.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Threads.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Timer.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Types.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_UTF8Util.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\OVR_Win32_IncludeWindows.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\LibOVRKernel\src\Kernel\WindowsAFunctions.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_Library.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_OutputPlugins.h" />
+    <ClInclude Include="..\..\..\addons\ofxOculusRiftCV1\libs\Logging\include\Logging_Tools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
